@@ -23,11 +23,7 @@ function show_similar_posts() {
 	if($select_posts === '1') {
 		$selected_posts = get_post_meta($postID, 'similar_posts_posts', true);
 	}
-	if($ptype === 'story') {
-		$ptype_title = '<span>MORE: </span>'.$ptype_label.' OF IMPACT';
-	} else {
-		$ptype_title = 'RELATED CONTENT';
-	}
+    $ptype_title = '<span>MORE: </span>'.$ptype_label.' OF IMPACT';
 	if(!empty($heading)) {
 		$ptype_title = $heading;
 	}
